@@ -1,0 +1,30 @@
+{
+  "namespace": "com.flyer.avro",
+  "type": "record",
+  "name": "User",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "age",
+      "type": [
+        "int",
+        "null"
+      ]
+    },
+    {
+      "name": "job",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "favorite_language",
+      "type": "string",
+      "default": "java"
+    }
+  ]
+}
