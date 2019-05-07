@@ -20,3 +20,11 @@ Both specific data serialization with code generation and generic data serializa
 An [RPC](https://www.tutorialspoint.com/remote-procedure-call-rpc) is an inter-process communication technique used for client-server based applications.
 RPC based APIs are great for actions (procedures or commands etc.) and REST based APIs are great at modeling the domain (resources or entities) and making CRUD operations.
 The [example](src/main/java/com/flyer/avro/rpc/AvroRPCDemo.java) here demonstrates how a client makes an RPC call to ask the server to send a message.  
+
+## Build & Run
+
+```
+mvn compile
+mvn -e exec:java -Dexec.mainClass=com.flyer.avro.rpc.AvroRPCDemo
+mvn -e exec:java -Dexec.mainClass=com.flyer.avro.serdes.AvroSerDesDemo 
+```
